@@ -8,7 +8,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/java" />
+            <option value="$PROJECT_DIR$/java/project" />
             <option value="$PROJECT_DIR$/project" />
+            <option value="$PROJECT_DIR$/spark" />
+            <option value="$PROJECT_DIR$/spark/project" />
           </set>
         </option>
         <option name="sbtVersion" value="0.13.17" />
