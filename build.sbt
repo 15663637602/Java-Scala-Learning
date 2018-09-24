@@ -27,3 +27,9 @@ lazy val spark = (project in file("spark"))
       "org.scalatest" %% "scalatest" % "3.0.5" % "test"
     )
   )
+
+lazy val scalal = (project in file("scalal"))
+  .settings(
+    name := "scalaLearn",
+    scalaVersion := "2.11.8"
+  )

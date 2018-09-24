@@ -98,7 +98,7 @@ public class MaxSumValue {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, -2, 3, 10, -4, 7, 2, -5};
+        int[] arr = {-1, -2, -3, 10, -4, -7, -2, -5};
         MaxSumValue.method1(arr);
         int result = MaxSumValue.method2(0, arr.length - 1, arr);
         System.out.println(result);

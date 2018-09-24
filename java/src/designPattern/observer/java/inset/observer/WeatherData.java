@@ -1,9 +1,5 @@
 package designPattern.observer.java.inset.observer;
 
-import designPattern.observer.withObserver.observer.Observer;
-import designPattern.observer.withObserver.observer.Subject;
-
-import java.util.ArrayList;
 import java.util.Observable;
 
 /**
