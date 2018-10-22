@@ -1,0 +1,44 @@
+**EXAMPLE 1**
+
+for(x <- c1; y <- c2; z <-c3) {...}
+is translated into
+
+c1.foreach(x => c2.foreach(y => c3.foreach(z => {...})))
+
+**EXAMPLE 2**
+
+for(x <- c1; y <- c2; z <- c3) yield {...}
+is translated into
+
+c1.flatMap(x => c2.flatMap(y => c3.map(z => {...})))
+
+**EXAMPLE 3**
+
+for(x <- c; if cond) yield {...}
+is translated into
+
+c.withFilter(x => cond).map(x => {...})
+with a fallback into
+
+c.filter(x => cond).map(x => {...})
+if method withFilter is not available but filter is. The next chapter has more information on this.
+
+**EXAMPLE 4**
+
+for(x <- c; y = ...) yield {...}
+is translated into
+
+c.map(x => (x, ...)).map((x,y) => {...})
+
+When you look at very simple for comprehensions, the map/foreach alternatives look, indeed, better. Once you start composing them, though, you can easily get lost in parenthesis and nesting levels. When that happens, for comprehensions are usually much clearer.
+
+I’ll show one simple example, and intentionally omit any explanation. You can decide which syntax is easier to understand.
+
+l.flatMap(sl => sl.filter(el => el > 0).map(el => el.toString.length))
+or
+
+for{
+  sl <- l
+  el <- sl
+  if el > 0
+} yield el.toString.length

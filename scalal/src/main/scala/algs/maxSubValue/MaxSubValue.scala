@@ -105,10 +105,41 @@ object MaxSubValue {
     println(maxSum)
   }
 
+  def method4(set: Array[Double]): Unit = {
+    val a = new Array[Record](set.length)
+    a(0) = new Record(0, set(0))
+    for (i <- 1 until set.length) {
+      if (a(i - 1).getValue + set(i) > set(i)) {
+        a(i) = new Record(a(i - 1).getStart_pos, a(i - 1).getValue + set(i))
+      } else {
+        a(i) = new Record(i, set(i))
+      }
+    }
+
+    var maxValue = a(0).getValue
+    var start_pos = 0
+    var end_pos = 0
+    for (i <- 1 until a.length) {
+      if(a(i).getValue > maxValue){
+        maxValue = a(i).getValue
+        start_pos = a(i).getStart_pos
+        end_pos = i
+      }
+    }
+    println("value: " + maxValue + " start_pos: " + start_pos + " end_pos: " + end_pos)
+  }
+
   def main(args: Array[String]): Unit = {
     val set: Array[Double] = Array(-1, 12, -3, -10, -4, 7, 2, -5)
     println(method1(set))
     method2(set)
     method3(set)
+    method4(set)
+
+  }
+
+  class Record(start_pos: Int, value: Double) {
+    def getStart_pos = start_pos
+    def getValue = value
   }
 }
