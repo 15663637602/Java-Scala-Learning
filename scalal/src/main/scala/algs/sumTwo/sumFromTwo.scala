@@ -1,4 +1,4 @@
-package algs.SumTwo
+package algs.sumTwo
 
 /**
   * define Give an array of integer and a sum, return the indexes of two integers
