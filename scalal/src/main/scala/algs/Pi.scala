@@ -9,7 +9,7 @@ import scala.util.Random
   *         Date 25/10/18  12:16
   * @version 1.0
   **/
-object pi {
+object Pi {
 
   def calcPi(seed: Int): Double = {
     var square_count: Double = 0.0

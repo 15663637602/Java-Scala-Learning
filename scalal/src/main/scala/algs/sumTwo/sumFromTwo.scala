@@ -37,7 +37,7 @@ object sumFromTwo {
   }
 
   def main(args: Array[String]): Unit = {
-    val arr = Array(2,4,6,8,7)
-    m(arr, 11)
+    val arr = Array(2,6,8,7)
+    m(arr, 4)
   }
 }
