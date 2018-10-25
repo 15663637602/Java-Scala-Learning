@@ -9,7 +9,7 @@ package algs.sumTwo
   **/
 object sumFromTwo {
 
-  def m(arr: Array[Int], sum: Int): Unit = {
+  def m(arr: Array[Int], sum: Int): Array[Int] = {
     val map: collection.mutable.Map[Int, Int] = collection.mutable.Map[Int, Int]()
     for (i <- arr.indices) {
       if (map.contains(sum - arr(i))) {
@@ -18,6 +18,22 @@ object sumFromTwo {
         map += (arr(i) -> i)
       }
     }
+    Array(1 ,2)
+  }
+
+  def twoSum(nums: Array[Int], target: Int): Array[Int] = {
+    val map: collection.mutable.Map[Int, Int] = collection.mutable.Map[Int, Int]()
+    var index1: Int = -1
+    var index2: Int = -1
+    for ( i <- nums.indices) {
+      if (map.contains(target - map(i))) {
+        index1 = map(target - map(i))
+        index2 = i
+      } else {
+        map += (nums(i) -> i)
+      }
+    }
+    Array(index1, index2)
   }
 
   def main(args: Array[String]): Unit = {
