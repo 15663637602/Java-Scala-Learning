@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="scalal-build [file:/home/yuqili/Project/java-scala-learning/Java-Scala-Learning/]" external.linked.project.path="$MODULE_DIR$/../../scalal/project" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" sbt.imports="SUB:DOLLAR092fbb1a0ba87ad04a9e.java, SUB:DOLLAR092fbb1a0ba87ad04a9e.scalal, SUB:DOLLAR092fbb1a0ba87ad04a9e.spark, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, sbt._, Keys._, dsl._" sbt.resolvers="https://repo1.maven.org/maven2/|maven|public, file:/home/yuqili/.sbt/preloaded|maven|local-preloaded, /home/yuqili/.ivy2/cache|ivy|Local cache" type="SBT_MODULE" version="4">
+<module external.linked.project.id="scalal-build [file:/home/yuqili/Project/java-scala-learning/Java-Scala-Learning/]" external.linked.project.path="$MODULE_DIR$/../../scalal/project" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" sbt.imports="SUB:DOLLAR17626eb9d8304027a954.java, SUB:DOLLAR17626eb9d8304027a954.scalaFx, SUB:DOLLAR17626eb9d8304027a954.scalal, SUB:DOLLAR17626eb9d8304027a954.spark, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, sbt._, Keys._, dsl._" sbt.resolvers="https://repo1.maven.org/maven2/|maven|public, file:/home/yuqili/.sbt/preloaded|maven|local-preloaded, /home/yuqili/.ivy2/cache|ivy|Local cache" type="SBT_MODULE" version="4">
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../scalal/project/target/idea-classes" />
     <output-test url="file://$MODULE_DIR$/../../scalal/project/target/idea-test-classes" />
@@ -77,6 +77,6 @@
   <component name="SbtModule">
     <option name="buildForId" value="scalal" />
     <option name="buildForURI" value="file:$MODULE_DIR$/../../" />
-    <option name="imports" value="SUB:DOLLAR092fbb1a0ba87ad04a9e.java, SUB:DOLLAR092fbb1a0ba87ad04a9e.scalal, SUB:DOLLAR092fbb1a0ba87ad04a9e.spark, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, sbt._, Keys._, dsl._" />
+    <option name="imports" value="SUB:DOLLAR17626eb9d8304027a954.java, SUB:DOLLAR17626eb9d8304027a954.scalaFx, SUB:DOLLAR17626eb9d8304027a954.scalal, SUB:DOLLAR17626eb9d8304027a954.spark, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, sbt._, Keys._, dsl._" />
   </component>
 </module>

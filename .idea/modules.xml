@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/java-learn.iml" filepath="$PROJECT_DIR$/.idea/modules/java-learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/java-scala-learning.iml" filepath="$PROJECT_DIR$/.idea/modules/java-scala-learning.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/java-scala-learning-build.iml" filepath="$PROJECT_DIR$/.idea/modules/java-scala-learning-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalaFx.iml" filepath="$PROJECT_DIR$/.idea/modules/scalaFx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalaFx-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scalaFx-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalaLearn.iml" filepath="$PROJECT_DIR$/.idea/modules/scalaLearn.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalal-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scalal-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/spark/spark.iml" filepath="$PROJECT_DIR$/spark/spark.iml" />

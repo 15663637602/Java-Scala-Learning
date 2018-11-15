@@ -8,10 +8,10 @@ lazy val spark = (project in file("spark"))
     name := "spark-practice",
     version := "0.1",
     scalaVersion := "2.11.8",
-    libraryDependencies ++= Seq("org.apache.hadoop" % "hadoop-client" % Versions.hadoop % "provided"
+    libraryDependencies ++= Seq("org.apache.hadoop" % "hadoop-client" % Versions.hadoop % "compile, provided"
       exclude("commons-logging", "commons-logging")
       ,
-      "org.apache.spark" %% "spark-core" % Versions.spark % "provided"
+      "org.apache.spark" %% "spark-core" % Versions.spark % "compile, provided"
         exclude("commons-logging", "commons-logging")
       ,
       "org.apache.spark" %% "spark-sql" % Versions.spark % "provided"
@@ -32,4 +32,11 @@ lazy val scalal = (project in file("scalal"))
   .settings(
     name := "scalaLearn",
     scalaVersion := "2.11.8"
+  )
+
+lazy val scalaFx = (project in file("scalaFx"))
+  .settings(
+    name := "scalaFx",
+    scalaVersion := "2.11.8",
+    libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.144-R12"
   )
