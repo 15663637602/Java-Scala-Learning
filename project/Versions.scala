@@ -25,4 +25,6 @@ object Versions {
   val scalatest = "3.0.4"
   val sparkTesting = "2.1.1_0.8.0"
   val wiremock = "2.6.0"
+
+  val tika = "1.17"
 }

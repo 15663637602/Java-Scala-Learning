@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info>
+    <mime-type type="application/xml">
+        <magic priority="25">
+            <match value="&lt;" type="string" offset="0">
+                <match value=" xmlns:" type="string" offset="2:200"/>
+                <match value=" xmlns=" type="string" offset="2:200"/>
+                <match value="\\w+[^&gt;]*&gt;" type="regex" offset="1"/>
+            </match>
+        </magic>
+        <sub-class-of type="text/plain"/>
+    </mime-type>
+
+    <mime-type type="application/json">
+        <magic priority="25">
+            <!-- match all starting with '{' or '['
+                <match value="[\\s\n]*(\\{|\\[).*" type="regex" offset="0"/>
+            -->
+            <match value="\\s*[\\[\\{][\\[\\{\\s]*([&apos;&quot;]).*\\1\\s*:" type="regex" offset="0"/>
+            <match value="\\s*[\\[\\{][\\[\\{\\s]*[^\\s:]+\\s*:" type="regex" offset="0"/>
+            <match value="[\\[\\s]*\\{\\s*\\}" type="regex" offset="0"/>
+            <match value="\\s*\\[\\s*(?:\\s|,|\\d|\\bfalse\\b|\\btrue\\b|\\bnull\\b|\\[|\\]|([&quot;&apos;]).*\\1|\\{\\s*(?:([&quot;&apos;]).*\\2|[^\\s:]+\\s*):.+\\s*\\})*\\]" type="regex" offset="0"/>
+        </magic>
+        <globe pattern="*.*"/>
+        <sub-class-of type="application/javascript"/>
+     </mime-type>
+ </mime-info>

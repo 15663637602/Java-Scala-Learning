@@ -31,7 +31,8 @@ lazy val spark = (project in file("spark"))
 lazy val scalal = (project in file("scalal"))
   .settings(
     name := "scalaLearn",
-    scalaVersion := "2.11.8"
+    scalaVersion := "2.11.8",
+    libraryDependencies += "org.apache.tika" % "tika-core" % Versions.tika
   )
 
 lazy val scalaFx = (project in file("scalaFx"))
