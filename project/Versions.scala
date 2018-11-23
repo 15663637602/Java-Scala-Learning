@@ -27,4 +27,6 @@ object Versions {
   val wiremock = "2.6.0"
 
   val tika = "1.17"
+  val snowflakeJdbc = "3.6.10"
+  val snowflakeSpark = "2.4.10-spark_2.4"
 }

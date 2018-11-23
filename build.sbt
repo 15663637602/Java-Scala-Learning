@@ -11,10 +11,10 @@ lazy val spark = (project in file("spark"))
     libraryDependencies ++= Seq("org.apache.hadoop" % "hadoop-client" % Versions.hadoop % "compile, provided"
       exclude("commons-logging", "commons-logging")
       ,
-      "org.apache.spark" %% "spark-core" % Versions.spark % "compile, provided"
+      "org.apache.spark" %% "spark-core" % Versions.spark
         exclude("commons-logging", "commons-logging")
       ,
-      "org.apache.spark" %% "spark-sql" % Versions.spark % "provided"
+      "org.apache.spark" %% "spark-sql" % Versions.spark
         exclude("commons-logging", "commons-logging")
       ,
       "org.apache.spark" %% "spark-hive" % Versions.spark % "provided"
@@ -24,7 +24,9 @@ lazy val spark = (project in file("spark"))
       "org.apache.spark" %% "spark-streaming" % Versions.spark % "provided"
         exclude("commons-logging", "commons-logging")
         exclude("stax", "stax-api"),
-      "org.scalatest" %% "scalatest" % "3.0.5" % "test"
+      "org.scalatest" %% "scalatest" % "3.0.5" % "test",
+      "net.snowflake" % "snowflake-jdbc" % Versions.snowflakeJdbc % "runtime",
+      "net.snowflake" % "spark-snowflake_2.11" % Versions.snowflakeSpark
     )
   )
 
