@@ -30,12 +30,12 @@ object Snowflake {
   val sfOptions = Map(
     "sfURL" -> "fw41796.eu-central-1.snowflakecomputing.com",
 //    "sfAccount" -> "fw41796",
-    "sfUser" -> "asd",
     "sfUser" -> "yuqi_li",
     "sfPassword" -> "18646086080Lyq",
-    "sfDatabase" -> "irs",
-    "sfSchema" -> "s2014v5",
+    "sfDatabase" -> "yqtest2",
+    "sfSchema" -> "public",
     "sfWarehouse" -> "etl"
+//    "preactions" -> "USE DATABASE yqtest;"
   )
   val extra: Map[String, String] = Map()
 

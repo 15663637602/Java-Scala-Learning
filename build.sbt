@@ -3,6 +3,11 @@ lazy val java = (project in file("java"))
     name := "java-learn"
   )
 
+lazy val javaFx = (project in file("javaFx"))
+  .settings(
+    name := "javaFx"
+  )
+
 lazy val spark = (project in file("spark"))
   .settings(
     name := "spark-practice",
