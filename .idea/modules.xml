@@ -13,7 +13,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalaFx-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scalaFx-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalaLearn.iml" filepath="$PROJECT_DIR$/.idea/modules/scalaLearn.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalal-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scalal-build.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spark/spark.iml" filepath="$PROJECT_DIR$/spark/spark.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spark-build.iml" filepath="$PROJECT_DIR$/.idea/modules/spark-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spark-practice.iml" filepath="$PROJECT_DIR$/.idea/modules/spark-practice.iml" />
     </modules>

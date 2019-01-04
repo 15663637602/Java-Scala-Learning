@@ -17,8 +17,8 @@ object SSaxParser {
 
   def main(args: Array[String]): Unit = {
     val saxParser = new SSaxParser().getSaxParser()
-    val file = new File("/home/yuqili/Project/practice/src/main/scala/xml/example.xml")
-    saxParser.parse(file, new DefaultHandler)
-
+    val file = new File("src/main/scala/xml/book.xml")
+    println(file)
+    saxParser.parse(file, new UDFHandler)
   }
 }

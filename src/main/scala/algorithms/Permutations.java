@@ -1,18 +1,24 @@
 package algorithms;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 
 public class Permutations {
 
     public static void f(String a) {
-        perm("", a);
+        List<String> l = new ArrayList<>();
+        perm("", a, l);
+        Set<String> set = new TreeSet<>(l);
+        for (String s : set) {
+            System.out.println(s);
+        }
     }
 
-    public static void perm(String pre, String s) {
-        if (s.length() == 0) System.out.println(pre);
+    public static void perm(String pre, String s, List<String> l) {
+        if (s.length() == 0) {
+            l.add(pre);
+        }
         for (int i = 0; i < s.length(); i++) {
-            perm(pre + s.substring(i, i + 1), s.substring(0, i) + s.substring(i + 1, s.length()));
+            perm(pre + s.substring(i, i + 1), s.substring(0, i) + s.substring(i + 1), l);
         }
     }
 
@@ -82,7 +88,7 @@ public class Permutations {
 
     public static void main(String[] args) {
         String a = "aabc";
-        Permutations.f2(a);
+        Permutations.f(a);
         System.out.println("----------------------");
         ArrayList<String> b = Permutations.permutation("aabc");
         b.forEach(System.out::println);
